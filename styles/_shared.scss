@@ -44,11 +44,10 @@
     }
 }
 
-$fifty-times: 50;
+$fifty-times: 50%;
 
 @function fifty-times($n) {
-    $result:$n * 100;
-    @return $result;
+    @return $n * $fifty-times;
 }
 
 @mixin bg-color-gray {

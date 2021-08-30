@@ -2179,7 +2179,7 @@ header, header button {
   padding: 2rem 0;
   border: none;
   background-color: #222533;
-  width: 50 2;
+  width: 100%;
   max-width: 37rem;
 }
 
@@ -2328,7 +2328,7 @@ header, header button {
   border: none;
   padding: .8rem 1.4rem;
   font-size: 2.5rem;
-  color: 200%;
+  color: grey;
   position: absolute;
   right: 0;
   top: .45rem;
