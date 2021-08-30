@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.001" height="25.001" viewBox="0 0 25.001 25.001">
+  <defs>
+    <filter id="delicious" x="0" y="0" width="25.001" height="25.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#000001" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="-6.136" y1="34.135" x2="-6.136" y2="-463.025" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="delicious-2" data-name="delicious" transform="translate(-1093.5 -10186.499)">
+    <g transform="matrix(1, 0, 0, 1, 1093.5, 10186.5)" filter="url(#delicious)">
+      <path id="delicious-3" data-name="delicious" d="M1115,10209h-18a2,2,0,0,1-2-2v-18a2,2,0,0,1,2-2h18a2,2,0,0,1,2,2v18A2,2,0,0,1,1115,10209Zm-8-11a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h7a1,1,0,0,0,1-1v-7a1,1,0,0,0-1-1Zm-9-9a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h7a1,1,0,0,0,1-1v-7a1,1,0,0,0-1-1Z" transform="translate(-1093.5 -10186.5)" fill="rgba(255,255,255,0.4)"/>
+    </g>
+    <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M1097,10209a2,2,0,0,1-2-2v-18a2,2,0,0,1,2-2h18a2,2,0,0,1,2,2v18a2,2,0,0,1-2,2Z" opacity="0.5" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

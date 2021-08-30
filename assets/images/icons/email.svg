@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.002" height="21" viewBox="0 0 25.002 21">
+  <defs>
+    <filter id="email" x="0" y="0" width="25.002" height="21" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#000001" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="-1.727" y1="41.611" x2="-1.727" y2="-566.056" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="email-2" data-name="email" transform="translate(-996.499 -10188.5)">
+    <g transform="matrix(1, 0, 0, 1, 996.5, 10188.5)" filter="url(#email)">
+      <path id="email-3" data-name="email" d="M1018,10207h-18a2,2,0,0,1-2-2v-14a2,2,0,0,1,2-2h18a2,2,0,0,1,2,2v14A2,2,0,0,1,1018,10207Zm-4-10h0l-1,1,5,5-4-6Zm-10,0h0l-4,6,5-5-1-1Zm-3.838-6.71h0l-.874.9,9.206,9.8.5-.9-8.83-9.8Zm17.553-.063-8.707,9.862.5.9,9.173-9.8-.966-.966Z" transform="translate(-996.5 -10188.5)" fill="rgba(255,255,255,0.4)"/>
+    </g>
+    <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M1000,10207a2,2,0,0,1-2-2v-14a2,2,0,0,1,2-2h18a2,2,0,0,1,2,2v14a2,2,0,0,1-2,2Z" opacity="0.5" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

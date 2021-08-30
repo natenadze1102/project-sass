@@ -1,0 +1,53 @@
+/*******************************Navigation*********************************/
+.navigation {
+    @include flex-center-full;
+    flex-wrap: wrap;
+    margin-top: 2.1rem;
+    margin-bottom: 9.6rem;
+    border-bottom: 3px solid #70707013;
+    padding-bottom: 1.8rem;
+
+    .logo {
+        @include flex-center-align;
+        flex-wrap: wrap;
+        gap: 1.41rem;
+        font-size: 3.569rem;
+        margin-right: 7.8rem;
+        position: relative;
+        right: 7.2rem;
+
+        span {
+            font-weight: 900;
+        }
+
+        @include respond-all-devices {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.41rem;
+            font-size: 3.569rem;
+            position: static;
+            margin-right: 0;
+        }
+    }
+
+    img {
+        display: block;
+        max-width: 4rem;
+        width: 100%;
+    }
+
+    ul {
+        @include flex-center-justify;
+        flex-wrap: wrap;
+        color: $grey-dark;
+        gap: 4.63rem;
+        font-size: 1.5rem;
+
+        a {
+            color: inherit; 
+        }
+    }
+}
+
+/*******************************Navigation*********************************/

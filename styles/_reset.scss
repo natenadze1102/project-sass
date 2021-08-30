@@ -1,0 +1,39 @@
+@import 'shared';
+@import 'palette';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    width: 192rem;
+   /*  max-width: 100%; */
+    $bg-color: $white !default;
+
+    @include respond-all-devices {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}

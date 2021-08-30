@@ -1,0 +1,61 @@
+/*******************************Features*********************************/
+.features {
+    @include flex-center-justify;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+
+    &_container {
+        max-width: 27rem;
+        width: 100%;
+        text-align: center;
+
+        &:nth-of-type(3){
+            margin-top: -.5rem;
+        }
+
+        p {
+            &:first-of-type {
+                font-size: 1.8rem;
+                font-weight: bold;
+                padding: 1.8rem 3.59rem .7rem 3.59rem;
+            }
+            &:last-of-type {
+                font-size: 1.4rem;
+                font-weight: normal;
+                color: $grey-dark;
+                padding: 0 4rem 3.2rem 4rem;
+                line-height: 1.75;
+            }
+
+        }
+
+        &--img {
+            position: relative;
+            padding: 2rem;
+            display: inline-flex;
+            border: 1px solid #DBE7EF;
+            @include radius(50%);
+            z-index: 3;
+
+            &:after {
+                display: block;
+                content: " ";
+                position: absolute;
+                z-index: -1;
+                top: 4px;
+                left: 4px;
+                right: 4px;
+                bottom: 4px;
+                border: 1px solid #DBE7EF;
+                @include radius(50%);
+            }
+        }
+    }
+
+    fieldset {
+        border:1px solid #DBE7EF;
+    }
+}
+
+/*******************************Features*********************************/

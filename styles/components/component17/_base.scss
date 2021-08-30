@@ -1,0 +1,73 @@
+/* COLORS */
+.white {
+    color: $white;
+}
+
+.bg-grey {
+    background-color: $grey;
+}
+
+.bg-grey-transp {
+    background-color: $grey-transp;
+}
+
+.bg-grey-darker {
+    background-color: $grey-darker;
+}
+
+.bg-light-grey {
+    background-color:$grey-light;
+}
+
+.bg-light {
+    background-color: $light;
+}
+
+.bg-lightest {
+    background-color: $grey;
+}
+
+.bg-dark-grey {
+    background-color: $grey-dark;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-dark-blue {
+    background-color: $blue-dark!important;
+}
+
+.bg-dark-blue-2 {
+    background-color: $blue-dark-v2;
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.circle-dark {
+    background-color: $blue-dark!important;
+}
+
+.text-white {
+    color: $white;
+}
+/* COLORS */
+
+/* CLASSES */
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex-gap {
+    gap: 2rem;
+}
+/* CLASSES */

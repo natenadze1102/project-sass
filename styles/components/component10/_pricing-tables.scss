@@ -1,0 +1,199 @@
+/*******************************Pricing Tables*********************************/
+.pricing-tables {
+
+    @include respond-all-devices {
+        padding:unset;
+    }
+
+    @include flex-center-align;
+    flex-direction: column;
+    padding: 8.64rem 23rem 0rem 23rem;
+
+    .text {
+        h2 {
+            margin-bottom: .4rem;
+        }
+
+        p {
+            margin-bottom: 8.5rem;
+        }
+    }
+
+    .table__container {
+        display: grid;
+        width: 117.2rem;
+        height: 47.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: .1rem;
+
+        @include respond-all-devices {
+            grid-template-columns: repeat( auto-fit, minmax(200px, 293px));
+            grid-template-rows: repeat( auto-fit, minmax(39px, 39px));
+            width: unset;
+            height: unset; 
+        }
+
+        &__item {
+            @include flex-center-justify;
+
+            & * {
+                display: flex;
+                align-self: center;
+            }
+
+            h3 {
+                font-size: 2.4rem;
+                font-weight: 400;
+                color: white;
+            }   
+
+            
+        }
+
+        #table__container__item-first {
+            grid-area: 1 / 1 / span 2 / 1;
+        
+            h3 {
+                color: $grey-dark;
+            }
+        }
+
+        #table__container__item-second {
+            padding: 1.55rem 9.57rem 1.55rem 9.53rem ;
+        }
+
+        .pricing {
+            display: flex;
+            flex-direction: column;
+            background: rgb(29,209,173);
+            background: linear-gradient(90deg, rgba(29,209,173,1) 21%, rgba(69,208,255,1) 100%);
+            font-weight: 300;  
+        
+            p {
+                font-size: 4.8rem;
+                color: $white;
+            }
+        
+            span {
+                font-size: 1.4rem;
+                color: $white;
+                position: relative;
+                bottom: 15%;
+                font-weight: 400;
+            }
+        
+            .letter-q  {
+                p {
+                    color:#EF584D;
+                font-size: 1.6rem;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        
+            .letter-r  {
+                p {
+                    color: #7BC200;
+                    font-size: 1.6rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+
+        .diff-item {
+            position: relative;
+            height: 125%;
+            top: -25%;
+        }
+    }
+
+    .advertisement {
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $grey-light;
+        position: relative;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 10.2rem;
+        max-width: 117rem;
+
+        @include respond-all-devices {
+            flex-wrap: wrap;
+        }
+    
+        h3 {
+            font-size: 2.4rem;
+            font-weight: 300;
+            position: relative;
+            bottom: .9rem;
+        }
+    
+        p {
+            font-size: 1.4rem;
+            color: $grey-dark;
+            max-width: 78%;
+            line-height: 1.7;
+        }
+    
+        a {
+            color: $white;
+            background-color: $green;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.8rem;
+            padding: 1.4rem  2.7rem ;
+            border-radius: 3px;
+            position: relative;
+            bottom: 1.6rem;
+            left: 1rem;
+        }
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            padding: 0 4.5rem;
+    
+            &::after{
+                content: '';
+                position: absolute;
+                height: 92%;
+                width: 1rem;
+                background-color:$green;
+                top: .5rem;
+                left: .5rem;
+            }
+        }
+    }
+}
+
+.table__container__item p {
+    color: #686D80;
+    font-size: 1.4rem;
+}
+
+.table__container__item--btn {
+    display: inline-flex;
+    font-size: 1.5rem;
+    padding: .52rem 2.1rem .68rem 2.28rem;
+    margin: 2.6rem 8.6rem 2.5rem 8.3rem;
+    box-shadow: 0px 2px 1px 0px $grey-darker;
+}
+
+.btn-block { 
+    font-weight: 700;
+    margin: 0 auto;
+
+    a {
+        @include respond-all-devices {
+            display: inline-flex;
+        }
+    }
+}
+
+.advertisemen__text-container {
+    @include flex-center-align;
+    align-self: flex-start;
+    gap: 3.1rem;
+    margin-bottom: .5rem;
+}
+/*******************************Pricing Tables*********************************/

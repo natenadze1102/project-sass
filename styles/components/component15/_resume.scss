@@ -1,0 +1,242 @@
+.relative {
+    position: relative;
+}
+/*******************************Resume*********************************/
+.resume {
+    background-color: #1A1C27;
+    padding-top: 9rem;
+    padding-bottom: 10rem;
+
+    &__container {
+        @include flex-center-justify;
+        gap: 3rem;
+        flex-wrap: wrap;
+
+        h2 {
+            color: $white;
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin-left: 2.6rem;
+            margin-bottom: 2.6rem;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 1.8rem;
+                left: .2rem;
+                top: .8rem;
+                background-color: $green;
+            }
+        }
+        &:nth-last-of-type() {
+            h2 {
+                &::after {
+                    left: 1rem;
+                }
+            }
+        }
+
+        .flickr__widget {
+            h2 {
+                &::after {
+                    left: -2.2rem;
+                }
+            }
+        }
+
+        p {
+            color: $grey-dark;
+            font-size: 1.4rem;
+            line-height: 1.72;
+        }
+
+        #resume__container__second-parag {
+            margin-top: 2.4rem;
+            margin-bottom: 2.3rem;
+        }
+
+        &__about {
+            &__first-p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .equal-size {
+            max-width: 37rem;
+        }
+
+        &__about {
+            .logo {
+                position:relative;
+            }
+
+            img {
+                position: absolute;
+                top: 2.9rem;
+                left: 18.1rem;
+                width: 1.8rem;
+            }
+        }
+
+        &__logo {
+            @extend .relative;
+
+            p {
+                font-size: 5.949rem;
+                font-weight: 500;
+                color: $white;
+
+                span {
+                    color: $green;
+                    font-weight: 900;
+                }
+            }
+        }
+        &__about {
+            position: relative;
+
+            h2 {
+                font-weight: 900;
+                margin-left: 2.3rem
+
+                
+            }
+
+            span {
+                font-weight: 300;
+            }
+
+            input {
+                background: transparent;
+                border-radius: 3px;
+                padding: 2rem 0;
+                border: none;
+                background-color: $blue-dark-v3;
+                width: $fifty-times(2);
+                max-width: 37rem;
+
+                &::placeholder {
+                    color: $grey-dark;
+                    padding-left: 3rem;
+                    letter-spacing: .3px;
+                    font-size: 1.34rem;
+                    transform: translateY(2px);
+                }
+            }
+        }
+
+        &__input_container {
+            position: relative;
+        }
+
+        &__featured {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            h2 {
+                span {
+                    font-weight: 300;
+                }
+            }
+
+            p {
+                font-weight: 700;
+                margin-top: -1rem;
+            }
+        }
+        &__shape__container {
+            display: flex;
+
+            p {
+                font-size: 1.6rem;
+            }
+
+            span {
+                display: block;
+                width: 9rem;
+                height: 9rem;
+                background-color: $white;
+            }
+
+            &__different {
+                position: relative;
+
+                p {
+                    color: $white
+                }
+
+                span {
+                    background: $green;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '+';
+                    color: $white;
+                    font-size: 7.2rem;
+                    font-weight: 300;
+                    bottom: -1px;
+                    left:2.5rem;
+                }
+            }
+        }   
+
+        .flickr__widget {
+            h2 {
+                position: relative;
+                font-weight: 900;
+                margin-bottom: 5.5rem;
+                margin-left: 2.3rem;
+                position: relative;
+
+                span {
+                    font-weight: 300;
+                }
+            }
+
+            .bunch-squares {
+                display: flex;           
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                a {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: $green;
+                    margin-top: 1.7rem;
+                }
+            }
+            .resume__container__flickr__shape__container {
+                &:nth-of-type(6) {
+                    span {
+                        background: #f6f7f8;
+                        box-shadow: 0px 0px 0px 2px $white;
+                    }
+                }
+
+                span {
+                    display: block;
+                    width: 8.5rem;
+                    height: 8.5rem;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+.search__btn {
+    background: $green;
+    border: none;
+    padding:.8rem 1.4rem;
+    font-size: 2.5rem;
+    color:fifty-times(2%);
+    position: absolute;
+    right: 0;
+    top: .45rem;
+}
+
+/*******************************Resume*********************************/

@@ -1,0 +1,77 @@
+/*******************************Services*********************************/
+.services {
+    margin-top: 8.7rem;
+
+    &__container {
+        @include flex-center-full;
+        flex-direction: column;
+    }
+
+    .row-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include respond-all-devices {
+            justify-content: center;
+        }
+    }
+
+    .text-container {
+        @include flex-center-full;
+        flex-direction: column;
+        text-align: center;
+
+        & >h2 {
+            font-size: 3.6rem;
+            font-weight: 300;
+            margin-bottom: 1.1rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: $grey-dark;
+            line-height: 1.7;
+            max-width: 63.7rem;
+        }
+    }
+}
+
+.icon-container {
+    @include flex-center-justify;
+    text-align: center;
+    flex-direction: column;
+    max-width: 25%;
+    border: 1px solid $grey;
+    padding: 4.7rem 6.89rem 4rem 6.89rem;
+    margin-top: 4.3rem;
+
+    @include respond-all-devices {
+        padding: 2rem;
+        max-width: unset;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        margin-bottom: 3.7rem;
+    }
+
+    p {
+        color: $grey-dark;
+        font-size: 1.4rem;
+        max-width: 33.958rem;
+        line-height: 1.75;
+    }
+
+    &:nth-of-type(2) {
+        p {
+            position: relative;
+            bottom: 1px;
+        }
+    }
+}
+
+/*******************************Services*********************************/

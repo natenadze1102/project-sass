@@ -1,0 +1,93 @@
+/*******************************header*********************************/
+
+.header {
+    @include flex-center-full;
+    text-align: center;
+    height: 128rem;
+    background-color: $blue-dark-v3;
+
+    @include respond-all-devices{ 
+        max-height: 120rem;
+        height: 100%;
+    }
+
+    .header__container {
+        & * {
+            text-transform: uppercase;
+        }
+    
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 9px;
+            margin-left: 1rem;
+    
+            span {
+                color: $green;
+            }
+        } 
+    
+        p {
+            &:first-of-type {
+                font-size: 6rem;
+                font-weight: 900;
+                margin-bottom: .2rem;
+            }
+            &:last-of-type {
+                font-size: 3rem;
+                font-weight: 300;
+            }
+        }
+    
+        button {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            padding: 1.5rem  2.7rem;
+            cursor: pointer;
+            background-color: transparent;
+            margin-top: 3.85rem;
+            margin-bottom: 4rem;
+            border-radius: 3px;
+    
+            &:first-of-type {
+                border: 2px solid $white;
+                margin-right: 1.8rem;
+            }
+            
+            &:last-of-type {
+                padding: 1.7rem  2.7rem ;
+                background-color: $green;
+                border:none;
+            }
+        }
+    
+        &__container {
+            position: relative;
+            bottom: 1.9rem;
+        }
+
+        @include respond-all-devices {
+            max-width: 105.2rem;
+            padding: 4rem;
+        }
+    }
+}
+
+header,header button {
+    color: $white;
+}
+
+.radio_group {
+    @include flex-center-justify;
+    gap: .9rem;
+
+    & input[type=radio] {
+        border: 0px;
+        width: 1.47rem;
+        height: 1.47rem;
+    }
+}
+
+/*******************************header*********************************/
+

@@ -1,0 +1,252 @@
+/*******************************Contact*********************************/
+.contact {
+    background-color: $blue-dark-v3;
+
+    h2 {
+        font-size: 3.6rem;
+        margin-bottom: 3.77rem;
+        font-weight:300;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+    
+    p,h2 {
+        color:$white;
+    }
+    
+    &__container {
+        display: flex;
+        gap: 2rem;
+        padding: 8.8rem 29.3rem 10rem 37.5rem;
+        margin-top: 12.7rem;
+
+        @include respond-all-devices {
+            padding: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        i {
+            color: $white;
+        }
+    }
+
+    &__form  {
+
+        @include respond-all-devices {
+            max-width: 80%;
+        }
+
+        h2 {
+            position: relative;
+            right: .3rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.45;
+        }
+
+        input, select, textarea {
+            color: $white;
+        }
+
+        ::placeholder {
+            color: $white;
+        }
+          
+        input,textarea {
+            border-radius: 3px;
+        }
+
+        input {
+            &[type=text],
+            &[type=email],
+            &[type=number] {
+                width: 100%;
+                padding: 1.40rem 1.9rem;
+                display: inline-block;
+                border: 1px solid #636372;
+                background: transparent;
+                font-size: 1.45rem;
+            }
+        }
+        
+        input[type=text]:focus, input[type=email]:focus, input[type=number]:focus {
+            outline: none;
+        }
+
+        textarea {
+            background-color: transparent;
+            resize: none;
+            height: 9.9rem;
+        }
+
+        .icons-container {
+            display: flex;
+            gap: 2.6rem;
+            font-size: 2.58rem;
+            position: relative;
+            top: .48rem;
+            left: .35rem;
+
+            @include respond-all-devices {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            div {
+                &:first-of-type {
+                    position: relative;
+                    right: .5rem;
+                }
+
+                &:nth-of-type(2) {
+                    color: #16B5D8;
+                }
+            }
+
+            .google {
+                filter: brightness(0) invert(1);
+                width: 100%;
+            }
+
+            .twitter {
+                img {
+                    position: absolute;
+                    left: .4rem;
+                    bottom: -.5rem;
+                }
+
+                i {
+                    color: #16B5D8;
+                }
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 2.8rem;
+            gap: 2rem;
+
+            @include respond-all-devices {
+                max-width:57rem;
+            }
+        }
+    }
+}
+
+.contact__team {
+
+    @include respond-all-devices {
+        max-width: 80%;
+    }
+
+    h2 {
+        margin-left: .9rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .small-square__container {
+            display: flex;
+            gap: .5rem;
+            position: relative;
+            bottom: .5rem;
+            left: 1.1rem;
+
+            div {
+                width: 1rem;
+                height: 1rem;
+                background-color: $white;
+
+                &:nth-of-type(2) {
+                    background-color: #1BEAC1;
+                }
+            }
+        }
+    }
+
+    &__container {
+
+        @include respond-all-devices {
+            align-items: center;
+        }
+
+        display: flex;
+        gap: 1.91rem;
+        position: relative;
+        left: 1rem;
+        bottom: .5rem;
+
+        &__box {
+            position: relative;
+
+            span {
+                color: $white;
+                font-size: 7rem;
+                @include position-center;
+            }
+
+            &--img {
+                width: 12.5rem;
+                height: 12.5rem;
+                background-color: $white;
+                position: relative;
+                top: .7rem;
+                
+            }
+        }
+
+        .container__box--img--second {
+            background-color: transparent;
+            border: 5px solid $white;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: $white;
+                margin-bottom: .5rem;
+            }
+
+            p {
+                max-width: 100%;
+                line-height: 1.7;
+                max-width: 80%;
+                margin-bottom: .65rem;
+                margin-right: .4rem;
+            }
+        }
+    }
+}
+
+.sendbtn {
+    background-color: $green;
+    color: white;
+    padding: 1.7rem 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: -.8px;
+    position: relative;
+    right: 3px;
+}
+
+
+/*******************************Contact*********************************/

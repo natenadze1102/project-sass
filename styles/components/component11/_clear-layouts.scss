@@ -1,0 +1,156 @@
+/*******************************Clear and Clean Layouts*********************************/
+.clear-layouts {
+    padding: 0 33.1rem 0 37.5rem;
+    margin-top: 20rem;
+
+    @include respond-all-devices {
+        padding:unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__container {
+        display: flex;
+        gap: 5.5rem;
+
+        @include respond-all-devices {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .quadrangle {
+            order: 2;
+
+            @include respond-all-devices {
+                text-align: center;
+            }
+        
+            img {
+                transform: translateY(1.1rem);
+
+                @include respond-all-devices {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &:first-of-type {
+            margin-bottom: 7.8rem;
+        }
+
+        &:nth-of-type(2) {
+            gap: 0rem;
+
+            .four__box__container {
+                margin-top: 0;
+                margin-bottom: 5rem;
+                position: relative;
+                right: .1rem;
+                top: .2rem;
+
+                @include respond-all-devices {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: 5.1rem;
+                }
+            }
+        }
+
+        .screen {
+            img {
+                @include respond-all-devices {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        font-weight: 300;
+        margin-top: 5rem;
+    }
+
+    .four__box__container {
+        max-width: 61.468rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 6rem;
+
+        .box-container {
+
+            @include respond-all-devices {
+                max-width: 45%;
+            }
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-width: 49%;
+            margin-top: .5rem;
+
+
+
+            &:nth-child(4), 
+            &:nth-child(5){
+                position: relative;
+                top: 1.7rem; 
+            }
+
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-top: -0.5rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                text-align: left;
+                max-width: 80%;
+                color: $grey-dark;
+                line-height: 1.75;
+                position: relative;
+                top: .7rem;
+            }
+
+            a {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color:$green;
+                position: relative;
+                top: 1.3rem;
+            }
+            
+            .box-shape__contaiener {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    }   
+
+    #bottom-box {
+        &--first,
+        &--second {
+            position: relative;
+            bottom: 1.8rem;
+        }
+
+        &--first {
+            margin-bottom: 2rem;
+        }
+
+        .second-a {
+            position: relative;
+            top: 1.4rem!important;
+        }
+    }
+}
+
+/*******************************Clear and Clean Layouts*********************************/

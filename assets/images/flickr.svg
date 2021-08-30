@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.009" height="25.009" viewBox="0 0 25.009 25.009">
+  <defs>
+    <filter id="flickr" x="0" y="0" width="25.009" height="25.009" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#000001" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="-10.587" y1="34.123" x2="-10.587" y2="-462.86" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="flickr-2" data-name="flickr" transform="translate(-1191.496 -10186.496)">
+    <g transform="matrix(1, 0, 0, 1, 1191.5, 10186.5)" filter="url(#flickr)">
+      <path id="flickr-3" data-name="flickr" d="M1204,10209a11,11,0,1,1,7.781-3.223A10.933,10.933,0,0,1,1204,10209Zm4-14a3,3,0,1,0,3,3A3,3,0,0,0,1208,10195Zm-8,0a3,3,0,1,0,3,3A3,3,0,0,0,1200,10195Z" transform="translate(-1191.5 -10186.5)" fill="rgba(255,255,255,0.4)"/>
+    </g>
+    <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M1193,10198a11,11,0,1,1,11,11A11.005,11.005,0,0,1,1193,10198Z" opacity="0.5" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

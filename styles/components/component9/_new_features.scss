@@ -1,0 +1,157 @@
+/*******************************New Features*********************************/
+.new_features {
+    padding: 8.89rem 23rem 0rem 23rem;
+    background-color: #222533ef;
+
+    @include respond-all-devices {
+        padding:0!important;
+    }
+
+    & * {
+        color: $white!important;
+    }
+
+    .text {
+        h2 {
+            margin-bottom: .21rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__container {
+        @include flex-center-justify;
+        flex-wrap: wrap;
+        gap: 4.1rem;
+
+        @include respond-all-devices {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            max-width: 33.33%;
+        }
+
+        .figure-block  {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: .7rem;
+        
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+        
+            .figure {
+                padding:2.5rem;
+                @include radius(50%);
+                background-color: #1FDAB5;
+                position: relative;
+        
+                .tick {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 1.7rem;
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+
+        .shape_block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            max-width: 30rem;
+            margin-bottom: 3.6rem;
+
+            &:first-child {
+                margin-top: 7.9rem;
+            }
+
+            p {
+                font-size: 1.4rem; 
+                text-align: end;
+                line-height: 1.75;
+
+                &:last-of-type {
+                    margin-top: .1rem;
+                    margin-right: .1rem;
+                }
+            }
+        }
+
+        .column-first, .column-second, .column-third {
+            @include respond-all-devices {
+                max-width: 100%;
+            }
+        }
+
+        .column-first {
+            @include respond-all-devices {
+                order: 2;
+            }
+        }
+        
+        .column-second {
+            flex-grow: 1;
+
+            @include respond-all-devices {
+                width: 100%;
+                max-width: 44.6rem;
+                order:1;
+            }
+        }
+
+        .column-third {
+
+            @include respond-all-devices {
+                order:3;
+            }
+
+            .figure-block {
+                gap:1.2rem;
+
+                h3 {
+                    order: 2;
+                }
+
+                p {
+                    order: 1;
+                }
+            }
+
+            .shape_block {
+                align-items: flex-start;
+
+                p {
+                    text-align: left;
+                }
+            }
+        } 
+
+        .big-shape {
+            background-color: cadetblue;
+            height: 65rem;
+            width: 44.5rem;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-left: 2rem;
+            margin-top: -1rem;  
+
+            @include respond-all-devices {
+                width: 100%;
+                margin: unset;
+            }
+        }
+    }
+}
+
+@include column-equal-width-33;
+
+/*******************************New Features*********************************/

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.003" height="25.013" viewBox="0 0 17.003 25.013">
+  <defs>
+    <filter id="tumblr" x="0" y="0" width="17.003" height="25.013" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#000001" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="tumblr-2" data-name="tumblr" transform="translate(-416.51 -10186.491)">
+    <g transform="matrix(1, 0, 0, 1, 416.51, 10186.49)" filter="url(#tumblr)">
+      <path id="tumblr-3" data-name="tumblr" d="M432.013,10207.8a13.507,13.507,0,0,1-2.588.932,11.115,11.115,0,0,1-2.506.268,6.916,6.916,0,0,1-2.4-.379,5.859,5.859,0,0,1-2-1.087,3.964,3.964,0,0,1-1.152-1.5,6.442,6.442,0,0,1-.32-2.307v-7.719H418.01v-3.117a7.882,7.882,0,0,0,2.514-1.208,6.014,6.014,0,0,0,1.505-1.891,8.413,8.413,0,0,0,.781-2.8h3.172v5.093h5.155v3.928h-5.155v5.645a9.493,9.493,0,0,0,.12,2.375,2.04,2.04,0,0,0,.85.95,3.257,3.257,0,0,0,1.692.438,6.151,6.151,0,0,0,3.369-1.087Z" transform="translate(-416.51 -10186.49)" fill="rgba(255,255,255,0.4)"/>
+    </g>
+    <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M432.013,10207.8a13.507,13.507,0,0,1-2.588.932,11.115,11.115,0,0,1-2.506.268,6.916,6.916,0,0,1-2.4-.379,5.859,5.859,0,0,1-2-1.087,3.964,3.964,0,0,1-1.152-1.5,6.442,6.442,0,0,1-.32-2.307v-7.719H418.01v-3.117a7.882,7.882,0,0,0,2.514-1.208,6.014,6.014,0,0,0,1.505-1.891,8.413,8.413,0,0,0,.781-2.8h3.172v5.093h5.155v3.928h-5.155v5.645a9.493,9.493,0,0,0,.12,2.375,2.04,2.04,0,0,0,.85.95,3.257,3.257,0,0,0,1.692.438,6.151,6.151,0,0,0,3.369-1.087Z" opacity="0.5" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.005" height="24.998" viewBox="0 0 13.005 24.998">
+  <defs>
+    <filter id="facebook" x="0" y="0" width="13.005" height="24.998" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#000001" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="facebook-2" data-name="facebook" transform="translate(-1294.498 -10186.501)">
+    <g transform="matrix(1, 0, 0, 1, 1294.5, 10186.5)" filter="url(#facebook)">
+      <path id="facebook-3" data-name="facebook" d="M1306,10194h-3.032v-1.658a1.422,1.422,0,0,1,1.2-1.371h1.779v-3.956l-3.311-.014a4.353,4.353,0,0,0-4.637,4.611V10194h-2v4.009h2V10209h4.972v-10.99h2.475Z" transform="translate(-1294.5 -10186.5)" fill="rgba(255,255,255,0.4)"/>
+    </g>
+    <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M1306,10194h-3.032v-1.658a1.422,1.422,0,0,1,1.2-1.371h1.779v-3.956l-3.311-.014a4.353,4.353,0,0,0-4.637,4.611V10194h-2v4.009h2V10209h4.972v-10.99h2.475Z" opacity="0.5" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

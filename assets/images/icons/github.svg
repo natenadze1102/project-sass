@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.002" height="25" viewBox="0 0 16.002 25">
+  <defs>
+    <filter id="github" x="0" y="0" width="16.002" height="25" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#000001" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="github-2" data-name="github" transform="translate(-708.502 -10186.499)">
+    <g transform="matrix(1, 0, 0, 1, 708.5, 10186.5)" filter="url(#github)">
+      <path id="github-3" data-name="github" d="M723,10187.065c-2.135,1.229-4.336.192-5.923,0-7.006-.851-9.234,6.681-4.129,9.7-1.314.627-1.228,3.819.18,4.273-3.317.35-3.932,4.656-2.154,6.412,2.164,2.136,8.819,1.994,10.77,0,1.363-1.393,1.552-4.264.358-5.589-1.087-1.209-6.546-1.392-6.461-3.288.059-1.326,2.033-1.117,3.231-1.645a5.18,5.18,0,0,0,2.692-6.246c.5-.088.933-.241,1.436-.329Zm-8.616,6.905c-2.627-5.271,6.04-4.895,3.411,0A3.37,3.37,0,0,1,714.388,10193.971Zm4.846,10.356c.233,2.364-4.963,2.469-5.564.822-.506-1.387.124-1.779,1.615-2.137C716.974,10202.607,719.079,10202.745,719.234,10204.327Z" transform="translate(-708.5 -10186.5)" fill="rgba(255,255,255,0.4)"/>
+    </g>
+    <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M723,10187.065c-2.135,1.229-4.336.192-5.923,0-7.006-.851-9.234,6.681-4.129,9.7-1.314.627-1.228,3.819.18,4.273-3.317.35-3.932,4.656-2.154,6.412,2.164,2.136,8.819,1.994,10.77,0,1.363-1.393,1.552-4.264.358-5.589-1.087-1.209-6.546-1.392-6.461-3.288.059-1.326,2.033-1.117,3.231-1.645a5.18,5.18,0,0,0,2.692-6.246c.5-.088.933-.241,1.436-.329Zm-8.616,6.905c-2.627-5.271,6.04-4.895,3.411,0A3.37,3.37,0,0,1,714.388,10193.971Zm4.846,10.356c.233,2.364-4.963,2.469-5.564.822-.506-1.387.124-1.779,1.615-2.137C716.974,10202.607,719.079,10202.745,719.234,10204.327Z" opacity="0.5" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

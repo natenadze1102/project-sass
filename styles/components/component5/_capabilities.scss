@@ -1,0 +1,106 @@
+/*******************************Capabilities*********************************/
+.capabilities {
+    @include flex-center-align;
+    flex-direction: column;
+    background-color: $blue-dark-v3;
+    padding: 8.69rem 0 11.8rem 0;
+
+    h2 {
+        font-size: 3.6rem;
+        font-weight: 300;
+        color: $white;
+        margin-bottom: .84rem;
+    }
+
+    p {
+        color: $white;
+        line-height: 1.7;
+    }
+
+    &__container {
+        @include flex-center-full;
+        flex-direction: column;
+
+        &__text {
+            text-align: center;
+
+            p {
+                text-align: center;
+                font-size: 1.4rem;
+                max-width: 63.07rem;
+            }
+        }
+
+        span {
+            display: inline-flex;
+            background-color: $grey;
+            @include radius(50%);
+            font-size: 1.8rem;
+            padding: 3.97rem 3.57rem 4.08rem 3.47rem;
+            z-index: 10;
+            box-shadow:
+                0 0 0 40px hsl(0, 84%, 100%),
+                0 0 0 15px hsl(0, 0%, 90%),
+                0 0 0 48px $green;
+            margin: 10.4rem 10rem 7rem 10rem;
+        }
+
+        .circle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;  
+            max-width: 13%;
+
+            @include respond-all-devices {
+                max-width: 50%;
+            }
+
+            &:first-of-type {
+                right: .8rem;
+            }
+
+            &:nth-of-type(2) {
+                right: .2rem;
+
+                span {
+                    box-shadow:
+                    0 0 0 40px hsl(0, 84%, 100%),
+                    0 0 0 15px hsl(0, 0%, 90%),
+                    0 0 0 48px #21C2F8;
+                }
+            }
+
+            &:nth-of-type(3) {
+                left: .2rem;
+            }
+
+            &:nth-of-type(4) {
+                left: .7rem;
+            }
+
+            p {
+                text-align: center;
+
+                &:first-of-type {
+                    font-size: 1.8rem;
+                }
+
+                &:last-of-type {
+                    font-size: 1.4rem;
+                    margin-top: 1.1rem;
+                }
+            }
+        }
+
+        .row-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4.5rem;
+        }
+    }
+    
+}
+
+/*******************************Capabilities*********************************/

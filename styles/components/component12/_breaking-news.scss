@@ -1,0 +1,102 @@
+/*******************************Breaking News*********************************/
+@include bg-color-gray;
+
+.breaking-news {
+    padding: 0 33.1rem 0 37.5rem;
+    margin-top: 18rem;
+    background-color: $white;
+
+    @include respond-all-devices {
+        padding:unset;
+    }
+
+    .text {
+        position: relative;
+        right: 1.6rem;
+
+        p {
+            position: relative;
+            bottom: .6rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        .articles__container {
+            display: flex;
+            gap: 2.4rem;
+            flex-wrap: wrap;
+
+            .article-block__container {
+                display: flex;
+                max-width: 31%;
+                gap: 1.9rem;
+                margin-top: -.8rem;
+
+                @include respond-all-devices {
+                    max-width: 80%!important
+                }
+
+                &__shape {
+                    width: 17rem;
+                    height: 20rem;
+                }
+
+                &--taller {
+                    position: relative;
+                    top: 2.6rem;
+                }
+
+                #text__block {
+                
+                    &--first {
+                        max-width: 40%;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .text__block {
+
+                    h4 {
+                        color: $blue-dark;
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                    line-height: 1.46;
+                    position: relative;
+                    bottom: .5rem;
+                    }  
+
+                    span {
+                        font-size: 1.4rem;
+                        color: $grey-dark;
+                        line-height: 2;
+                    }
+
+                    .icon {
+                        font-size: 1.5rem;
+                        color: $grey-dark;
+
+                        &-gapped-more {
+                            gap: 1.5rem!important;
+                        }
+                    }
+
+                    .margin-more {
+                        position: relative;
+                        bottom:.3rem;
+                    }
+
+                    code {
+                        font-family: 'Lato', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*******************************Breaking News*********************************/
+

@@ -1,0 +1,61 @@
+@mixin respond-all-devices {
+    @media screen and (max-width: 1279px) { @content };
+}
+
+@mixin flex-center-justify {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border-default($size:1px) {
+    border:$size solid;
+}
+
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin column-equal-width-33 {
+    $columns: column-first, column-second, column-third;
+        @each $column in $columns {
+            &.#{$column} {
+                max-width: 33.33%;
+            }
+        }
+}
+
+@mixin radius($radius) {
+    @if $radius != 0 {
+      border-radius: $radius;
+    }
+}
+
+$fifty-times: 50;
+
+@function fifty-times($n) {
+    $result:$n * 100;
+    @return $result;
+}
+
+@mixin bg-color-gray {
+    @for $i from 1 through 5 {
+        .shape--#{$i} {
+            background-color: #CCCCCC;
+        }
+    }
+}
+
