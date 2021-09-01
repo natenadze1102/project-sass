@@ -307,7 +307,7 @@ header, header button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 3.1rem;
-  background-color: #ecf0f14d;
+  background-color: #ecf0f142;
   padding: 8.83rem 0 10.7rem 0;
 }
 
@@ -865,7 +865,7 @@ header, header button {
           flex-direction: column;
   padding-top: 8.5rem;
   padding-bottom: 3.5rem;
-  background-color: #ecf0f178;
+  background-color: #ecf0f142;
 }
 
 @media screen and (max-width: 1279px) {

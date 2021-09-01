@@ -3,7 +3,7 @@
 }
 /*******************************Resume*********************************/
 .resume {
-    background-color: #1A1C27;
+    background-color: $blue-dark-v6;
     padding-top: 9rem;
     padding-bottom: 10rem;
 
@@ -212,7 +212,7 @@
             .resume__container__flickr__shape__container {
                 &:nth-of-type(6) {
                     span {
-                        background: #f6f7f8;
+                        background: $white-v2;
                         box-shadow: 0px 0px 0px 2px $white;
                     }
                 }

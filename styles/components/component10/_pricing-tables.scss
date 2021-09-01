@@ -85,7 +85,7 @@
         
             .letter-q  {
                 p {
-                    color:#EF584D;
+                    color:$orange-light;
                 font-size: 1.6rem;
                 font-family: Arial, Helvetica, sans-serif;
                 }
@@ -93,7 +93,7 @@
         
             .letter-r  {
                 p {
-                    color: #7BC200;
+                    color: $yellow;
                     font-size: 1.6rem;
                     font-family: Arial, Helvetica, sans-serif;
                 }
@@ -167,7 +167,7 @@
 }
 
 .table__container__item p {
-    color: #686D80;
+    color: $brown-light;
     font-size: 1.4rem;
 }
 

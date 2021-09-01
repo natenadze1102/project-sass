@@ -34,7 +34,7 @@
             position: relative;
             padding: 2rem;
             display: inline-flex;
-            border: 1px solid #DBE7EF;
+            border: 1px solid $white-v1;
             @include radius(50%);
             z-index: 3;
 
@@ -47,14 +47,14 @@
                 left: 4px;
                 right: 4px;
                 bottom: 4px;
-                border: 1px solid #DBE7EF;
+                border: 1px solid $white-v1;
                 @include radius(50%);
             }
         }
     }
 
     fieldset {
-        border:1px solid #DBE7EF;
+        border:1px solid $white-v1;
     }
 }
 
